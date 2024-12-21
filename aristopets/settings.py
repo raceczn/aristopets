@@ -120,8 +120,11 @@ STATIC_URL = '/static/'
 
 # If you want to serve static files during development
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'myApp', 'static'),
+    BASE_DIR / 'myApp' / 'static',  # This is preferred in newer Django versions
 ]
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 
 # Default primary key field type

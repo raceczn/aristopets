@@ -2,15 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "myApp/static/**/*",
-      "use": "@vercel/static"
+      "src": "manage.py",
+      "use": "@vercel/python"
     },
     {
-      "src": "myApp/templates/**/*.html",
+      "src": "myApp/static/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/myApp/static/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/myApp/templates/$1"
