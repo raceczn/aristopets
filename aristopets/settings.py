@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-t)5wf*^n#--p3oc7e1gmr-iql5n@1(2^)ikd$qn-dp+6y$6=!d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app','localhost', '127.0.0.1']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'aristopets.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'myApp', 'templates')],  # Update this line
+        'DIRS': [os.path.join(BASE_DIR, 'myApp', 'templates')], #template directory
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
