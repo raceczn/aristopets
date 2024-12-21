@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "staticfiles/**/*",
+      "src": "myApp/static/**/*",
       "use": "@vercel/static"
     },
     {
-      "src": "templates/**/*.html",
+      "src": "myApp/templates/**/*.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/templates/$1"
+      "dest": "/myApp/templates/$1"
     }
   ]
 }
