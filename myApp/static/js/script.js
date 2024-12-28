@@ -15,9 +15,9 @@ navLinks.addEventListener("click", (e) => {
 });
 
 const scrollRevealOption = {
-  distance: "50px",
+  distance: "30px", // Reduced for quicker animations
   origin: "bottom",
-  duration: 1000,
+  duration: 500, // Faster duration
 };
 
 ScrollReveal().reveal(".header__content h4", {
@@ -25,24 +25,24 @@ ScrollReveal().reveal(".header__content h4", {
 });
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 250, // Reduced delay
 });
 ScrollReveal().reveal(".header__content h2", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500, // Reduced delay
 });
 ScrollReveal().reveal(".header__content p", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 750, // Reduced delay
 });
 ScrollReveal().reveal(".header__btn", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1000, // Reduced delay
 });
 
 ScrollReveal().reveal(".intro__card", {
   ...scrollRevealOption,
-  interval: 500,
+  interval: 300, // Faster interval
 });
 
 ScrollReveal().reveal(
@@ -58,25 +58,25 @@ ScrollReveal().reveal(".about__row:nth-child(4) .about__image img", {
 });
 ScrollReveal().reveal(".about__content span", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 250, 
 });
 ScrollReveal().reveal(".about__content h4", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500, 
 });
 ScrollReveal().reveal(".about__content p", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 750, 
 });
 
 ScrollReveal().reveal(".product__card", {
   ...scrollRevealOption,
-  interval: 500,
+  interval: 300, 
 });
 
 ScrollReveal().reveal(".service__card", {
-  duration: 1000,
-  interval: 500,
+  duration: 500, 
+  interval: 300, 
 });
 
 const swiper = new Swiper(".swiper", {
@@ -86,6 +86,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 ScrollReveal().reveal(".instagram__grid img", {
-  duration: 1000,
-  interval: 500,
+  duration: 500, 
+  interval: 300, 
 });

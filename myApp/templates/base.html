@@ -1,279 +1,499 @@
 {% load static %}
 
+
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <title>Aristopets</title>
-    <link rel="icon" href="{% static 'assets/aristopets.png' %}" type="image/png" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav__header">
-        <div class="nav__logo">
-          <a href="#">Aristopets</a>
-        </div>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-line"></i>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <title>Aristopets</title>
+  <link rel="icon" href="{% static 'assets/aristopets.png' %}" type="image/png" />
+</head>
+
+
+<body>
+
+  <!-- navigation bar -->
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#">Aristopets</a>
       </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#store">Store</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <header id="home">
-      <div class="section__container header__container">
-        <div class="header__content">
-          <h4>Welcome To</h4>
-          <h1><span>Aristopets</span></h1>
-          <h2>We love pets like you do :)</h2>
-          <p>
-            Shop treats, foods, clothes and toys for your furbabies with us.
-          </p>
-          <div class="header__btn">
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#product">Products</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- header section  -->
+  <header id="home">
+    <div class="section__container header__container">
+      <div class="header__content">
+        <h4>Welcome</h4>
+        <h1><span>Aristopets</span></h1>
+        <h2>Where Every Pet Deserves Royal treatment</h2>
+        <p>
+          From routine check-ups to specialized treatments, we're here to
+          ensure your pets lead happy, healthy lives.
+        </p>
+        <div class="header__btn">
+          <a href="#intro">
             <button>
-              See More
+              Start Here!
               <span><i class="ri-arrow-right-line"></i></span>
             </button>
-          </div>
-        </div>
-        <div class="header__image">
-          <img
-            src="{% static 'assets/header-bg.png' %}"
-            alt="header-bg"
-            class="header__image-bg"
-          />
-          <img src="{% static 'assets/header.png' %}" alt="header" />
+          </a>          
         </div>
       </div>
-      <div class="header__bottom"></div>
-    </header>
+      <div class="header__image">
+        <img src="{% static 'assets/header-bg.png' %}" alt="header-bg" class="header__image-bg" />
+        <img src="{% static 'assets/header.png' %}" alt="header" />
+      </div>
+    </div>
+    <div class="header__bottom"></div>
+  </header>
 
-    <section class="section__container intro__container">
-      <p class="section__subheader">Intro</p>
-      <h2 class="section__header">Get to know us more</h2>
-      <div class="intro__grid">
-        <div class="intro__card">
-          <div class="intro__image">
-            <img src="{% static 'assets/intro-1.png' %}" alt="intro" />
-          </div>
-          <h4>Pet Experts</h4>
+  <!-- intro section  -->
+  <section class="section__container intro__container" id="intro">
+    <p class="section__subheader">Intro</p>
+    <h2 class="section__header">Get to know us more</h2>
+    <div class="intro__grid">
+      <div class="intro__card">
+        <div class="intro__image">
+          <img src="{% static 'assets/intro-1.png' %}" alt="intro" />
+        </div>
+        <h4>Pet Experts</h4>
+        <p>
+          Meet our team of skilled veterinarians, dedicated to your pet's
+          well-being.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="intro__card">
+        <div class="intro__image">
+          <img src="{% static 'assets/intro-2.png' %}" alt="intro" />
+        </div>
+        <h4>Vet Services</h4>
+        <p>
+          Offering a wide range of veterinary services to keep your pets
+          healthy and happy.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="intro__card">
+        <div class="intro__image">
+          <img src="{% static 'assets/contact.png' %}" alt="intro" />
+        </div>
+        <h4>Contact Us</h4>
+        <p>
+          Reach out to us for any inquiries or schedule an appointment for
+          your pet's care.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section  -->
+  <section class="section__container about__container" id="about">
+    <p class="section__subheader">About Us</p>
+    <h2 class="section__header">What we can do for you</h2>
+    <div class="about__row">
+      <div class="about__image">
+        <img src="{% static 'assets/about-1.jpg' %}" alt="about" />
+      </div>
+      <div class="about__content">
+        <span><img src="{% static 'assets/about-1-icon.png' %}" alt="about-icon" /></span>
+        <h4>Providing royal care for your pet's health</h4>
+        <p>
+          At Aristopets, our expert veterinarians ensure your pet receives the best care, keeping them healthy and happy, just like royalty.
+        </p>
+      </div>
+    </div>
+    <div class="about__row">
+      <div class="about__image">
+        <img src="{% static 'assets/about-2.jpg' %}" alt="about" />
+      </div>
+      <div class="about__content">
+        <span><img src="{% static 'assets/about-2-icon.png' %}" alt="about-icon" /></span>
+        <h4>Compassionate caregivers for your precious pet</h4>
+        <p>
+          Your pet will be in good hands with our compassionate and
+          well-trained staff, who treat every pet like family.
+        </p>
+      </div>
+    </div>
+    <div class="about__row">
+      <div class="about__image">
+        <img src="{% static 'assets/about-3.jpg' %}" alt="about" />
+      </div>
+      <div class="about__content">
+        <span><img src="{% static 'assets/about-3-icon.png' %}" alt="about-icon" /></span>
+        <h4>Grooming fit for royalty</h4>
+        <p>
+          From luxurious baths to stylish grooming, Aristopets ensures your pet always looks and feels their best, with the care they truly deserve.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- product section  -->
+  <section class="product" id="product">
+    <div class="section__container product__container">
+      <p class="section__subheader">Products</p>
+      <h2 class="section__header">Featured pet products</h2>
+      <div class="product__grid">
+        <div class="product__card">
+          <img src="{% static 'assets/product-1.jpg' %}" alt="product" />
+          <h3>Toys</h3>
           <p>
-            Meet our team of skilled veterinarians, dedicated to your pet's
-            well-being.
+            Play and spend time with your furbabies with these toys that we offer.
           </p>
-          <a href="#">Read More</a>
+          <!-- <button class="see-more-btn">See More</button> -->
         </div>
-        <div class="intro__card">
-          <div class="intro__image">
-            <img src="{% static 'assets/intro-2.png' %}" alt="intro" />
-          </div>
-          <h4>Vet Services</h4>
+
+        <div class="product__card">
+          <img src="{% static 'assets/product-2.jpg' %}" alt="product" />
+          <h3>Pet Accessories</h3>
           <p>
-            Offering a wide range of veterinary services to keep your pets
-            healthy and happy.
+            Explore our range of stylish and functional accessories for your
+            furry friends.
           </p>
-          <a href="#">Read More</a>
+          <!-- <button class="see-more-btn">See More</button> -->
         </div>
-        <div class="intro__card">
-          <div class="intro__image">
-            <img src="{% static 'assets/intro-3.png' %}" alt="intro" />
-          </div>
-          <h4>Contact Us</h4>
+        <div class="product__card">
+          <img src="{% static 'assets/product-3.jpg' %}" alt="product" />
+          <h3>Pet Food & Treats</h3>
           <p>
-            Reach out to us for any inquiries or schedule an appointment for
-            your pet's care.
+            Nutritious and delicious dog food to keep your pet healthy and
+            happy.
           </p>
-          <a href="#">Read More</a>
+          <!-- <button class="see-more-btn">See More</button> -->
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="product" id="store">
-      <div class="section__container product__container">
-        <p class="section__subheader">Products</p>
-        <h2 class="section__header">Featured pet products</h2>
-        <div class="product__grid">
-          <div class="product__card">
-            <img src="{% static 'assets/product-1.jpg' %}" alt="product" />
-            <h4>Toys</h4>
-            <p>
-              Play and spend time with your furbabies with these toys that we offer.
-            </p>
-            <button class="see-more-btn">See More</button>
-          </div>
-          
-          <div class="product__card">
-            <img src="{% static 'assets/product-2.jpg' %}" alt="product" />
-            <h4>Pet Accessories</h4>
-            <p>
-              Explore our range of stylish and functional accessories for your
-              furry friends.
-            </p>
-            <button class="see-more-btn">See More</button>
-          </div>
-          <div class="product__card">
-            <img src="{% static 'assets/product-3.jpg' %}" alt="product" />
-            <h4>Dog Food & Treats</h4>
-            <p>
-              Nutritious and delicious dog food to keep your pet healthy and
-              happy.
-            </p>
-            <button class="see-more-btn">See More</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="client" id="feedback">
-      <div class="section__container client__container">
-        <p class="section__subheader">Customer Feedback</p>
-        <h2 class="section__header">What people say about us</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="{% static 'assets/client-1.jpg' %}" alt="client" />
-                  <div>
-                    <h4>Sarah Cornelio</h4>
-                  </div>
-                </div>
-                <p>
-                  My dog loves the toys from here! They’re durable 
-                  and keep him entertained for hours. Great selection and quality!
-                </p>
+  <!-- service section  -->
+  <div class="section__container popular__container" id="service">
+    <p class="section__subheader">Why choose Aristopets?</p>
+    <h2 class="section__header">Our Popular <span>Services</span></h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="popular__card">
+            <img src="{% static 'assets/grooming.jpg' %}" alt="popular" />
+            <div class="popular__content">
+              <div class="popular__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.9(34) 😊
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="{% static 'assets/client-2.jpg' %}" alt="client" />
-                  <div>
-                    <h4>Janna Gregorio</h4>
-                  </div>
-                </div>
-                <p>
-                  The accessories are adorable and practical.
-                  I found the perfect leash and collar for my pup!
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="{% static 'assets/client-3.jpg' %}" alt="client" />
-                  <div>
-                    <h4>Rances Cuizon</h4>
-                  </div>
-                </div>
-                <p>
-                  A one-stop shop for all my pet needs. Great prices and quick delivery!
-                </p>
-              </div>
+              <h4> Grooming Services</h4>
+              <p>Professional grooming tailored to keep your pet healthy, clean, and stylish.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section__container instagram__container">
-      <p>FOLLOW</p>
-      <h2 class="section__header">Instagram</h2>
-      <div class="instagram__grid">
-        <img src="{% static 'assets/instagram-1.jpg' %}" alt="instagram" />
-        <img src="{% static 'assets/instagram-2.jpg' %}" alt="instagram" />
-        <img src="{% static 'assets/instagram-3.jpg' %}" alt="instagram" />
-        <img src="{% static 'assets/instagram-4.jpg' %}" alt="instagram" />
-      </div>
-    </section>
-
-    <footer id="contact">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#">Aristopets</a>
+        <div class="swiper-slide">
+          <div class="popular__card">
+            <img src="{% static 'assets/vaccine.jpg' %}" alt="popular" />
+            <div class="popular__content">
+              <div class="popular__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.9(34) 😊
+              </div>
+              <h4> Vaccination Services</h4>
+              <p>Ensure your pet's health with our reliable and affordable vaccination services, protecting them against
+                common diseases.</p>
+            </div>
           </div>
         </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <ul class="footer__links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
+        <div class="swiper-slide">
+          <div class="popular__card">
+            <img src="{% static 'assets/petboarding.jpg' %}" alt="popular" />
+            <div class="popular__content">
+              <div class="popular__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.5(55) 😘
+              </div>
+              <h4>Pet Boarding</h4>
+              <p>Safe and comfortable accommodations for your pet while you’re away.</p>
+
+            </div>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4>Address</h4>
-          <ul class="footer__links">
-            <li><a href="#">Manila, Philippines</a></li>
-            <li><a href="#">View on Maps</a></li>
-          </ul>
-          <br />
-          <h4>Inquiries</h4>
-          <ul class="footer__links">
-            <li><a href="#">+63</a></li>
-            <li><a href="#">info@website.com</a></li>
-          </ul>
+        <div class="swiper-slide">
+          <div class="popular__card">
+            <img src="{% static 'assets/training.jpg' %}" alt="popular" />
+            <div class="popular__content">
+              <div class="popular__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.2(45) 😊
+              </div>
+              <h4>Training & Behavior Support</h4>
+              <p>Professional training to help your pet become well-behaved and obedient.</p>
+
+            </div>
+          </div>
         </div>
-        <div class="footer__col">
-          <h4>Newsletter</h4>
-          <p>Stay updated with out latest news</p>
-          <form action="/newsletter/">
-            <input type="text" placeholder="Your email" name="email" />
-            <button class="btn">
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </form>
-          <br />
-          <h4>Follow Us</h4>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-youtube-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-pinterest-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-tiktok-fill"></i></a>
-            </li>
-          </ul>
+        <div class="swiper-slide">
+          <div class="popular__card">
+            <img src="{% static 'assets/health_check.jpg' %}" alt="popular" />
+            <div class="popular__content">
+              <div class="popular__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.8(25) 😘
+              </div>
+              <h4>Health & Wellness</h4>
+              <p>Regular check-ups and preventive care to ensure your pet stays healthy.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="popular__card">
+            <img src="{% static 'assets/adopt_pet.jpg' %}" alt="popular" />
+            <div class="popular__content">
+              <div class="popular__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.0(15) 😊
+              </div>
+              <h4>Adoption Assistance</h4>
+              <p>Helping rescue pets find their forever homes with loving families.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="{% static 'js/script.js' %}"></script>
-  </body>
+    </div>
+  </div>
+
+
+  <!-- Testimonials section  -->
+  <section class="client" id="feedback">
+    <div class="section__container client__container">
+      <p class="section__subheader">Testimonials</p>
+      <h2 class="section__header">What people say about us</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="{% static 'assets/client-1.jpg' %}" alt="client" />
+                <div>
+                  <h4>Sarah Grace Cornelio</h4>
+                  <h5>Client</h5>
+                </div>
+              </div>
+              <p>
+                The care my dog received at Pet Doctor was exceptional. The
+                vets were attentive cared about my dog's well-being.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="{% static 'assets/client-2.jpg' %}" alt="client" />
+                <div>
+                  <h4>Michael Adams</h4>
+                  <h5>Client</h5>
+                </div>
+              </div>
+              <p>
+                Pet Doctor saved my cat during an emergency! Their quick
+                response and expertise made all the difference.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="{% static 'assets/client-3.jpg' %}" alt="client" />
+                <div>
+                  <h4>Emily Martinez</h4>
+                  <h5>Client</h5>
+                </div>
+              </div>
+              <p>
+                I trust Pet Doctor with all my pets. Their team is
+                professional, and they always go the extra mile for their
+                patients.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="{% static 'assets/client-1.jpg' %}" alt="client" />
+                <div>
+                  <h4>Jason Lee</h4>
+                  <h5>Client</h5>
+                </div>
+              </div>
+              <p>
+                The grooming services at Pet Doctor are fantastic! My pup
+                always comes back looking fresh and happy.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="{% static 'assets/client-2.jpg' %}" alt="client" />
+                <div>
+                  <h4>David Thompson</h4>
+                  <h5>Client</h5>
+                </div>
+              </div>
+              <p>
+                I've never seen a team so dedicated to animals. Pet Doctor is
+                my go-to clinic for all pet-related issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery section  -->
+  <section class="section__container instagram__container" id="gallery">
+    <p>Photos</p>
+    <h2 class="section__header">Gallery</h2>
+    <div class="instagram__grid">
+      <img src="{% static 'assets/instagram-1.jpg' %}" alt="instagram" />
+      <img src="{% static 'assets/instagram-2.jpg' %}" alt="instagram" />
+      <img src="{% static 'assets/instagram-3.jpg' %}" alt="instagram" />
+      <img src="{% static 'assets/instagram-4.jpg' %}" alt="instagram" />
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <img src="{% static 'assets/shape-divider-custom.png' %}" alt="" class="contact-shape" />
+    <div class="contact_form_outside">
+      <div class="contact_form">
+        <h2>Get in Touch</h2>
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Your Email Address" />
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+      </div>
+    </div>
+    <div class="contact_content">
+      <div class="headings">
+        <h2>Book a <span>consultation</span> for your beloved pets.</h2>
+      </div>
+      At Aristopets, we believe every pet deserves the care and attention fit for royalty. Whether you're seeking advice or looking to join our mission of helping animals in need, we're here to connect with you. Let's elevate the lives of our furry companions together.
+      <div class="contact_det-container">
+        <div class="contact_det">
+          <img src="{% static 'assets/map.png' %}" alt="Map">
+          <div class="contact_info">
+            <h2>Our Address</h2>
+            <p>CvSU, Bacoor Cavite, Philippines</p>        
+          </div>
+        </div>
+        
+        <div class="contact_det">
+          <img src="{% static 'assets/phone.png' %}" alt="Contact">
+          <div class="contact_info">
+            <h2>Contact Number</h2>
+            <p>+63909831</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+
+
+  <!-- footer section  -->
+  <footer id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#">Aristopets</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Address</h4>
+        <ul class="footer__links">
+          <li><a href="#">Cavite, Philippines</a></li>
+          <li><a href="#">View on Maps</a></li>
+        </ul>
+        <br />
+        <h4>Inquiries</h4>
+        <ul class="footer__links">
+          <li><a href="#">+63909831</a></li>
+          <li><a href="#">aristopets@vercel.app</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Newsletter</h4>
+        <p>Stay updated with out latest news</p>
+        <form action="/newsletter/">
+          <input type="text" placeholder="Your email" name="email" />
+          <button class="btn">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </form>
+        <br />
+        <h4>Follow Us</h4>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-pinterest-line"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-tiktok-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+
 </html>
