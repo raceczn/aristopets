@@ -1,6 +1,6 @@
 # Aristopets Django Project
 
-Aristopets is a platform dedicated to providing premium care for cats and dogs, ensuring they are treated with the love and respect they deserve. The name combines "Aristo," symbolizing noble and royal treatment, with "Pets," reflecting the platform's focus on animals. Aristopets strives to elevate the lives of pets by offering top-tier care while promoting compassion and responsible pet ownership. It's a place where pets are cherished, and their well-being is a priority, inspiring a community of love, care, and support for animals in need.
+Aristopets is a promotional business platform dedicated to providing premium care for cats and dogs, ensuring they are treated with the love and respect they deserve. The name combines "Aristo," symbolizing noble and royal treatment, with "Pets," reflecting the platform's focus on animals. Aristopets strives to elevate the lives of pets by offering top-tier care while promoting compassion and responsible pet ownership. It's a place where pets are cherished, and their well-being is a priority, inspiring a community of love, care, and support for animals in need.
 ## Prerequisites
 
 Ensure the following are installed on your system:
