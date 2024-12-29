@@ -52,7 +52,7 @@
         <div class="header__btn">
           <a href="#intro">
             <button>
-              Start Here!
+              See More!
               <span><i class="ri-arrow-right-line"></i></span>
             </button>
           </a>          
@@ -91,7 +91,7 @@
           Offering a wide range of veterinary services to keep your pets
           healthy and happy.
         </p>
-        <a href="#">Read More</a>
+        <a href="#service">Read More</a>
       </div>
       <div class="intro__card">
         <div class="intro__image">
@@ -102,7 +102,7 @@
           Reach out to us for any inquiries or schedule an appointment for
           your pet's care.
         </p>
-        <a href="#">Read More</a>
+        <a href="#contact">Read More</a>
       </div>
     </div>
   </section>
@@ -389,10 +389,10 @@
     <div class="contact_form_outside">
       <div class="contact_form">
         <h2>Get in Touch</h2>
-        <input type="text" placeholder="Your Name" />
-        <input type="text" placeholder="Your Email Address" />
-        <textarea placeholder="Your Message"></textarea>
-        <button>Send Message</button>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email Address" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </div>
     </div>
     <div class="contact_content">

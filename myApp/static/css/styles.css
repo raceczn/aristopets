@@ -4,7 +4,7 @@
 :root {
   --primary-color: rgb(224, 192, 214);
   --text-dark: #3f3b57;
-  --text-light: #908ca3;
+  --text-light: #777486;
   --white: #ffffff;
   --max-width: 1200px;
 }
@@ -13,8 +13,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  zoom: 97%;
-  /* Zooms out the content to 80% */
+  font-family: "Poppins", sans-serif !important;
+  zoom: 98%;
 
 }
 
@@ -396,7 +396,7 @@ img.header__image-bg {
 }
 
 .about__content p {
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
   max-width: 470px;
   margin-inline: auto;
   color: var(--text-light);
@@ -850,7 +850,7 @@ img.header__image-bg {
 .contact_content p {
   font-size: 1rem;
   font-weight: 500;
-  color: #333;
+  color: var(--text-dark);
 }
 
 .contact_det-container {
@@ -892,7 +892,7 @@ img.header__image-bg {
   font-size: 1rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  color: #333;
+  color: var(--text-dark);
 }
 
 .headings {
@@ -908,7 +908,7 @@ img.header__image-bg {
   font-size: 2.5rem !important;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  color: #333;
+  color: var(--text-dark);
   line-height: 1.4;
   margin: 0;
 }
