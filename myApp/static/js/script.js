@@ -89,3 +89,58 @@ ScrollReveal().reveal(".instagram__grid img", {
   duration: 500, 
   interval: 300, 
 });
+
+
+// Scroll to Top Button
+const scrollTopBtn = document.createElement("button");
+scrollTopBtn.innerHTML = "&#8679;";
+scrollTopBtn.id = "scroll-top-btn";
+document.body.appendChild(scrollTopBtn);
+
+// Apply CSS styles
+scrollTopBtn.style.position = "fixed";
+scrollTopBtn.style.bottom = "20px";
+scrollTopBtn.style.right = "20px";
+scrollTopBtn.style.width = "60px";
+scrollTopBtn.style.height = "60px";
+scrollTopBtn.style.background = "linear-gradient(145deg,rgb(190, 109, 170),rgb(218, 119, 220))"; // Gradient for playful effect
+scrollTopBtn.style.color = "#fff";
+scrollTopBtn.style.border = "none";
+scrollTopBtn.style.borderRadius = "50%";
+scrollTopBtn.style.display = "none"; // Initially hidden
+scrollTopBtn.style.justifyContent = "center";
+scrollTopBtn.style.alignItems = "center";
+scrollTopBtn.style.cursor = "pointer";
+scrollTopBtn.style.fontSize = "28px";
+scrollTopBtn.style.fontWeight = "bold";
+scrollTopBtn.style.boxShadow = "2px 4px 10px rgba(0, 0, 0, 0.2)";
+scrollTopBtn.style.zIndex = "1000"; // Ensure it's on top of other elements
+scrollTopBtn.style.transition = "transform 0.3s ease"; // Smooth transition on hover
+
+// Hover effect for a fun, kiddie feel
+scrollTopBtn.addEventListener("mouseover", () => {
+  scrollTopBtn.style.transform = "scale(1.1)"; // Slightly enlarge button on hover
+});
+
+scrollTopBtn.addEventListener("mouseout", () => {
+  scrollTopBtn.style.transform = "scale(1)"; // Reset to original size when mouse leaves
+});
+
+// Function to show/hide button on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.style.display = "flex";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+// Function to scroll to top when button is clicked
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+

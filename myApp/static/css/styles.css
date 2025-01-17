@@ -597,9 +597,12 @@ img.header__image-bg {
 }
 
 .client__details img {
-  max-width: 50px;
-  border-radius: 100%;
+  width: 50px !important;  /* Set fixed width */
+  height: 50px !important; /* Set fixed height */
+  object-fit: cover !important; /* Ensures the image fills the box without distortion */
+  border-radius: 50% !important; /* Makes it a perfect circle */
 }
+
 
 .client__details h4 {
   font-size: 1.1rem;
