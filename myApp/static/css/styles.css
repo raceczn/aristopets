@@ -14,7 +14,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif !important;
-  zoom: 98%;
 
 }
 
@@ -56,27 +55,39 @@ ul {
 html,
 body {
   scroll-behavior: smooth;
+  
 
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
-
 nav {
-  position: fixed;
-  isolation: isolate;
-  width: 100%;
-  z-index: 9;
+  position: fixed !important;
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100% !important; 
+  max-width: 100vw !important;
+  z-index: 10; 
+  background-color: var(--white);
+ 
 }
 
 .nav__header {
   padding: 1rem;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding-left: 5rem !important;
+  justify-content: space-between; /* Keeps logo and menu button spaced out */
+  align-items: center; /* Centers content vertically */
   background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .nav__header {
+    padding-left: 0 !important;
+  }
 }
 
 .nav__logo a {
@@ -95,8 +106,10 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  padding: 2rem;
+  width: 100%; /* Ensures the links span the entire width */
+  padding: 1rem;
+  padding-right: 5rem !important;
+  /* background-color: #1b5bb5 !important; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,10 +134,17 @@ nav {
 }
 
 header {
+  margin-top: 5.9rem;
   padding-top: 5rem;
   position: relative;
   isolation: isolate;
   background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 0;
+  }
 }
 
 .header__bottom {

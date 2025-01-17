@@ -144,3 +144,13 @@ scrollTopBtn.addEventListener("click", () => {
 });
 
 
+// Scroll to top when Home link is clicked
+const homeLink = document.getElementById("home-link");
+
+homeLink.addEventListener("click", (e) => {
+  e.preventDefault(); // Prevent default link behavior
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Smooth scrolling
+  });
+});
